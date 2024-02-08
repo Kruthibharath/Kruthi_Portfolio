@@ -6,6 +6,7 @@ import { resolve } from "path";
 export default defineConfig({
   base: "/Kruthi_Portfolio/",
   plugins: [react()],
+
   build: {
     outDir: "dist", // Change 'dist' to your desired output directory
   },
