@@ -1,0 +1,14 @@
+.socialmedia_container {
+  //   text-align: center;
+  margin: 20px 0;
+  a {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .socialmedia_container {
+    a {
+      margin-right: 6px;
+    }
+  }
+}

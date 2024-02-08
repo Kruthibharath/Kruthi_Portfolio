@@ -1,0 +1,127 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  height: 70vh;
+  h1 {
+    opacity: 0;
+    animation: slideFromLeft 1.5s ease-out forwards;
+  }
+  h2 {
+    opacity: 0;
+    color: var(--section-heading);
+    margin: 0px;
+    font-weight: bold;
+    //animation: titleTypingAnimation 1.5s steps(30, end);
+    animation: slideFromRight 1.5s ease-out forwards;
+    white-space: nowrap;
+  }
+  &_text-wrapper {
+    max-width: 900px;
+  }
+  &_image-wrapper {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s ease-in-out;
+  }
+  &_image-wrapper:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  }
+  &_image {
+    width: 460px;
+    border-radius: 10px;
+  }
+  &_connect_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    animation: slideUp 1.5s ease-out forwards;
+    button {
+      cursor: pointer;
+      font-size: 1.5rem;
+      padding: 15px 40px;
+      border: 2px solid var(--primary);
+      border-radius: 10px;
+      color: var(--primary);
+      background-color: #fff;
+      font-weight: bold;
+      &:hover {
+        background-color: var(--primary);
+        color: #fff;
+        border: 2px solid #fff;
+      }
+    }
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*@keyframes titleTypingAnimation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }*/
+
+@media only screen and (max-width: 1025px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    &_image {
+      width: 560px;
+    }
+  }
+}
+@media only screen and (max-width: 780px) {
+  .hero {
+    h2 {
+      white-space: normal !important;
+    }
+    &_image {
+      width: 420px;
+    }
+    &_connect_wrapper {
+      margin: 20px;
+      button {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 460px) {
+  .hero {
+    &_image {
+      width: 350px;
+    }
+  }
+}

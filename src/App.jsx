@@ -4,11 +4,13 @@ import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { Home } from "./pages/Home/Home";
 import { Experience } from "./pages/Experience/Experience";
 import { Contact } from "./pages/Contact/Contact";
+import { Nav } from "./components/Nav/Nav";
 
 function App() {
   return (
     <>
       <BrowserRouter basename="/Kruthi_Portfolio/">
+        <Nav />
         <Routes>
           <Route index element={<Home />} />
           <Route path="aboutMe" element={<AboutMe />} />
