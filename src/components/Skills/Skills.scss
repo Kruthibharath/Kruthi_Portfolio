@@ -1,0 +1,22 @@
+.skills {
+  &_content-list {
+    h4 {
+      margin: 20px 0;
+      font-weight: bold;
+      color: var(--section-heading);
+    }
+  }
+  &_progressbar-wrapper {
+    animation: fadeIn 1.5s ease-out forwards;
+  }
+}
+@keyframes fadeIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

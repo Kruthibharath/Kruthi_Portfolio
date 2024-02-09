@@ -1,0 +1,60 @@
+.expertise {
+  &_content-wrapper {
+    h4 {
+      margin: 20px 0;
+      font-weight: bold;
+      color: var(--section-heading);
+    }
+  }
+  &_content-lists {
+    display: flex;
+    gap: 40px;
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      animation: blurIn 5s ease forwards;
+      img {
+        width: 96px;
+        margin: 20px 0;
+      }
+    }
+  }
+}
+@keyframes blurIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .expertise {
+    &_content-lists {
+      li {
+        img {
+          width: 64px;
+        }
+        span {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .expertise {
+    &_content-lists {
+      li {
+        img {
+          width: 40px;
+        }
+        span {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

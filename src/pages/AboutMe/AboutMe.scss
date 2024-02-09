@@ -1,0 +1,29 @@
+.about {
+  margin: 20px 40px;
+  &_profile {
+    h3 {
+      margin: 20px 0;
+      font-weight: bold;
+      color: var(--section-heading);
+    }
+  }
+  &_skills {
+    display: flex;
+    gap: 40px;
+    &_technical,
+    &_toolsAndFrameworks {
+      width: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .about {
+    &_skills {
+      display: block;
+      &_technical,
+      &_toolsAndFrameworks {
+        width: auto;
+      }
+    }
+  }
+}
