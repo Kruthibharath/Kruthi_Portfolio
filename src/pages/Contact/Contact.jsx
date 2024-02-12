@@ -1,7 +1,7 @@
 import "./Contact.scss";
 import { SocialMedia } from "../../components/SocialMedia/SocialMedia";
 export const Contact = () => {
-  const accessKey = import.meta.env.VITE_MY_PORTFOLI0_WEB3FORMS_ACCESS_KEY;
+  //const accessKey = import.meta.env.VITE_MY_PORTFOLI0_WEB3FORMS_ACCESS_KEY;
   return (
     <>
       <section className="contact">
@@ -13,7 +13,11 @@ export const Contact = () => {
             method="post"
             className="contact_content_form"
           >
-            <input type="hidden" name="access_key" value={accessKey} />
+            <input
+              type="hidden"
+              name="access_key"
+              value="41188a6e-f89e-46e0-b8ac-082f694572d5"
+            />
             <label className="contact_content_form_label">
               Name:
               <input
