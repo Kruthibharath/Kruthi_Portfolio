@@ -1,0 +1,91 @@
+.contact {
+  margin: 20px 40px;
+  color: var(--secondary);
+  h3 {
+    font-weight: bold;
+    color: var(--section-heading);
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-weight: bold;
+    }
+    &_form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &_label {
+        margin-right: 10px;
+      }
+      &_input,
+      &_textarea {
+        color: var(--secondary) !important;
+        outline: none;
+        font-weight: 700;
+        border: 2px solid var(--secondary);
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1rem;
+      }
+      &_input {
+        width: 400px;
+        height: 40px;
+        margin: 0 0 20px 10px;
+      }
+      &_textarea {
+        height: 100px;
+        width: 480px;
+        margin-bottom: 20px;
+      }
+      &_input:focus,
+      &_textarea:focus {
+        border: 2px solid var(--primary);
+      }
+      &_button {
+        width: 150px;
+        height: 40px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--secondary) !important;
+        border: 2px solid var(--secondary);
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--primary);
+          color: #fff !important;
+          border: 2px solid #fff;
+        }
+      }
+    }
+  }
+  &_socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    p {
+      font-weight: bold;
+    }
+  }
+}
+@media only screen and (max-width: 460px) {
+  .contact {
+    &_content {
+      &_form {
+        &_label {
+          margin-bottom: 10px;
+        }
+        &_input {
+          margin: 10px 0;
+          width: 300px;
+        }
+        &_textarea {
+          width: 300px;
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}
