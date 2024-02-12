@@ -37,6 +37,8 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm install
+        env:
+        VITE_MY_PORTFOLI0_WEB3FORMS_ACCESS_KEY: ${{ secrets.VITE_MY_PORTFOLI0_WEB3FORMS_ACCESS_KEY }}
       - name: Build
         run: npm run build && cp ./dist/index.html ./dist/404.html
       - name: Setup Pages
