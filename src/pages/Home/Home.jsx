@@ -2,14 +2,13 @@ import { SocialMedia } from "../../components/SocialMedia/SocialMedia";
 import { PersonalDetails } from "../../components/PersonalDetails/PersonalDetails";
 import heroImage from "../../assets/images/kruthi2.jpg";
 import "./Home.scss";
-//import { useNavigate } from "react-router-dom";
-//import { Contact } from "../Contact/Contact";
+import { useNavigate } from "react-router-dom";
+import Kruthi_Bharath_Resume from "../../assets/Kruthi_Resume.pdf";
 
 export const Home = () => {
-  //const navigate = useNavigate();
-  //console.log(navigate);
-  const handleNavigateToContact = () => {};
-  const handleDownloadCV = () => {};
+  const navigate = useNavigate();
+  const handleNavigateToContact = () => navigate("/Contact");
+  //const handleDownloadCV = () => {};
   return (
     <>
       <section className="hero">
@@ -34,7 +33,10 @@ export const Home = () => {
         </div>
       </section>
       <div className="hero_connect_wrapper">
-        <button onClick={handleDownloadCV}>Download CV</button>
+        <a href={Kruthi_Bharath_Resume} download={Kruthi_Bharath_Resume}>
+          {/* <a href="Kruthi_Resume.pdf" download="Kruthi_Bharath_Resume.pdf"> */}
+          <button> Download CV </button>
+        </a>
         <button onClick={handleNavigateToContact}>Contact Me</button>
       </div>
     </>
