@@ -5,7 +5,7 @@ import "./AboutMe.scss";
 export const AboutMe = () => {
   const about = {
     label: "PROFILE",
-    data: "In my 8 years of professional experience, I have honed my skills in developing robust and scalable web applications. My expertise lies in leveraging a variety of development tools and frameworks to deliver seamless user experiences. I have a keen eye for detail and a commitment to writing clean, efficient code that not only meets but exceeds client expectations. Adept at collaborating with cross-functional teams to drive project success. Proficient in developing Optimization tests to enhance User journeys and creating seamless digital experience.",
+    data: "In my 8 years of professional experience, I have honed my skills in developing robust and scalable web applications. My expertise lies in leveraging on a variety of development tools and frameworks to deliver seamless user experiences. I have a keen eye for detail and a commitment to writing clean, efficient and readable code. Proficient in developing Optimization A/B tests to enhance User journeys and digital experience. Adept at collaborating with cross-functional teams to drive project success.",
   };
 
   return (

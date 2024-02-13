@@ -13,7 +13,7 @@ export const Experience = () => {
         <div className="timeline">
           <div className="timeline_experience">
             <h3 className="timeline_experience_header">
-              Experience & Education
+              Professional Experience
             </h3>
             <VerticalTimeline layout={"1-column"} lineColor="var(--primary)">
               {experienceData.experience.map((item, i) => (

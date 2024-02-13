@@ -16,7 +16,7 @@ export const Home = () => {
           <h1>Kruthi Bharath</h1>
           <h2>Front End Web Developer</h2>
           <p>
-            Passionnate Front End Web Developer skilled in creating neat and
+            Passionate Front End Web Developer skilled in creating neat and
             efficient user interfaces. Professional experience in developing
             interactive, cross-browser, cross-device compatible web
             applications.
